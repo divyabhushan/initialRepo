@@ -1,0 +1,5 @@
+#database logs
+[prod]:
+	employee
+	salary
+[dev]:

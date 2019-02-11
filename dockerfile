@@ -1,13 +1,15 @@
 #pull container from 
-#FROM divyabhushan/myrepo
+FROM divyabhushan/myrepo
 
-FROM ubuntu
+#FROM ubuntu
 
 RUN echo "hello from github dockerfile."
 RUN mkdir demo
 COPY README.md /demo/README.md
 
-CMD ["exec", "pwd"]
-CMD ["exec", "uname -a"]
+RUN ls -lt /demo/
+
+RUN ["echo", "` pwd `"]
+RUN ["echo", "` uname -a `"]
 CMD cat /demo/README.md
 
