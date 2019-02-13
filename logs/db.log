@@ -1,5 +1,5 @@
 #database logs
-[prod]:
+[uat]:
 	employee
 	salary
 [dev]:
